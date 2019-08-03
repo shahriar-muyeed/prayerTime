@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ramadan 2019"
+        android:id="@+id/text"
+        android:textColor="#CB4335"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    SL     SEHRI     IFTAR       DATE"
+        android:layout_below="@+id/text"
+        android:textColor="#27AE60"
+        android:id="@+id/text1"
+
+        android:textSize="20sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text1"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/data"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:hint=""/>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TIME"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/fazar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="89dp"
+        android:text="Fazar" />
+
+    <TextView
+        android:id="@+id/juhur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="147dp"
+        android:text="JUHUR" />
+
+    <TextView
+        android:id="@+id/asar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="30sp"
+        android:layout_marginTop="206dp"
+        android:text="ASAR" />
+
+    <TextView
+        android:id="@+id/magrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="270dp"
+        android:textSize="30sp"
+        android:text="MAGRIB" />
+
+    <TextView
+        android:id="@+id/esha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="223dp"
+        android:text="ESHA"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fazarTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        android:text="fazarTime"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/juhurTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:text="JuhurTime"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/asarTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginRight="151dp"
+        android:text="asarTime"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/mugribTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:text="mugribTime"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/eshaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="137dp"
+        android:layout_marginRight="137dp"
+        android:layout_marginBottom="235dp"
+        android:text="eshaTime"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginBottom="123dp"
+        android:text="Date"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/dateNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginLeft="171dp"
+        android:layout_marginBottom="69dp"
+        android:text="DATE"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/fazarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/juhurbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/asarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/mugribButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/eshaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="221dp"
+        android:text="Button" />
+
+
+</RelativeLayout>
