@@ -1,235 +1,303 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
 
 
     <TextView
         android:id="@+id/time"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="TIME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="TIMING"
         android:textAlignment="center"
         android:textSize="40sp"
-        android:layout_alignParentLeft="true" />
+        app:layout_constraintEnd_toStartOf="@+id/fazarButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/fazar"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="89dp"
-        android:text="Fazar" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/juhur"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/fazar"
+            android:text="FAJR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+             />
+
+        <TextView
+            android:id="@+id/fazarTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="fazarTime"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/fazarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="set Alarm"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="147dp"
-        android:text="JUHUR" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/asar"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/juhur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="DHUHR"
+            android:textAlignment="center"
+            android:textSize="30sp"
+
+             />
+
+        <TextView
+            android:id="@+id/juhurTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="JuhurTime"
+            android:textAlignment="center"
+            android:textSize="20dp"
+             />
+
+        <Button
+            android:id="@+id/juhurbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="set Alarm"
+             />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:textSize="30sp"
-        android:layout_marginTop="206dp"
-        android:text="ASAR" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/magrib"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/asar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="ASR"
+            android:textAlignment="center"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/asarTime"
+            android:text="asarTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/asarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="set Alarm"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="270dp"
-        android:textSize="30sp"
-        android:text="MAGRIB" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/esha"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/magrib"
+            android:text="MAGHRIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/mugribTime"
+            android:text="mugribTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/mugribButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="set Alarm"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginBottom="223dp"
-        android:text="ESHA"
-        android:textSize="30sp" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/fazarTime"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/esha"
+            android:text="ESHA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/eshaTime"
+            android:text="eshaTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/eshaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="set Alarm"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="94dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginRight="141dp"
-        android:text="fazarTime"
-        android:textSize="20dp" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/juhurTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="157dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginRight="138dp"
-        android:text="JuhurTime"
-        android:textSize="20dp" />
+        <TextView
+            android:id="@+id/date"
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
 
-    <TextView
-        android:id="@+id/asarTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="151dp"
-        android:layout_marginRight="151dp"
-        android:text="asarTime"
-        android:textSize="20dp" />
+            />
 
-    <TextView
-        android:id="@+id/mugribTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="273dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginRight="125dp"
-        android:text="mugribTime"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/eshaTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="137dp"
-        android:layout_marginRight="137dp"
-        android:layout_marginBottom="235dp"
-        android:text="eshaTime"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="168dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginBottom="123dp"
-        android:text="Date"
-        android:textSize="30dp" />
-
-    <TextView
-        android:id="@+id/dateNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="171dp"
-        android:layout_marginLeft="171dp"
-        android:layout_marginBottom="69dp"
-        android:text="DATE"
-        android:textSize="30dp" />
-
-    <Button
-        android:id="@+id/fazarButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/juhurbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="153dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/asarButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/mugribButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="267dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/eshaButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="17dp"
-        android:layout_marginRight="17dp"
-        android:layout_marginBottom="221dp"
-        android:text="Button" />
+        <TextView
+            android:id="@+id/dateNum"
+            android:text="DATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
 
 
-</RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
